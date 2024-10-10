@@ -1,0 +1,9 @@
+.cardBox{
+    max-width:250px;
+    max-height:150px;
+    padding:10px;
+}
+.details {
+    margin-left:65vh;
+    max-width:150px;
+}

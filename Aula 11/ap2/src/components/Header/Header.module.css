@@ -1,0 +1,20 @@
+.background {
+    display: flex;
+    align-items: center;
+    background-color: #0080c0;
+}
+
+.background h2 {
+    font-family: "Monospace", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 73vh; /* Adiciona margem à esquerda do h2 */
+}
+
+.background img { 
+    width: 110px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 15px; /* Mantém a margem à esquerda da imagem */
+}

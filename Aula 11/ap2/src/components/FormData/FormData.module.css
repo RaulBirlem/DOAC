@@ -1,0 +1,85 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.formData {
+    background-color: #f0f0f0; 
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto; 
+    margin-top:10px;
+}
+
+.label {
+    margin-bottom: 8px;
+    margin-top:10px;
+    font-weight: bold;
+    display: block; 
+}
+
+.input {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.checkboxLabel {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+button:nth-of-type(2) {
+    margin-left: 25px;
+    background-color: red;
+}
+
+button:nth-of-type(2):hover {
+    background-color: black;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.formData ul {
+    padding: 0;
+}
+
+.formData li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.formData img {
+    margin-right: 10px;
+}
+
+.formData li strong {
+    flex-grow: 1; 
+    text-align: left; 
+}
+
+.formData p {
+    margin-top:15px;
+}
+
+.formData img {
+    border-radius:50%;
+}

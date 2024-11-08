@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffebcd;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #8e44ad;
+    font-family: 'Arial', sans-serif;
+  }
+  

@@ -1,39 +1,45 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Home from "./components/Home";
 import Contato from "./components/Contato";
 import Sobre from "./components/Sobre";
+import styles from './App.module.css';
 
 function App() {
   const [pessoas, setPessoas] = useState([]);
 
   return (
-    <Router>
+    <BrowserRouter>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
+        <nav className={styles.navContainer}>
+          <ul className={styles.navList}>
+            <li className={styles.navItem}>
+              <Link to="/" className={styles.navLink}>
+                Home
+              </Link>
             </li>
-            <li>
-              <Link to="/contato">Contato</Link>
+            <li className={styles.navItem}>
+              <Link to="/contato" className={styles.navLink}>
+                Contato
+              </Link>
             </li>
-            <li>
-              <Link to="/sobre">Sobre</Link>
+            <li className={styles.navItem}>
+              <Link to="/sobre" className={styles.navLink}>
+                Sobre
+              </Link>
             </li>
           </ul>
         </nav>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/contato"
-            element={<Contato pessoas={pessoas} setPessoas={setPessoas} />}
-          />
-          <Route path="/sobre" element={<Sobre />} />
-        </Routes>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path="/sobre" element={<Sobre />} />
+          </Routes>
+        </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "id": "7f1d",
+      "name": "Teste",
+      "price": "120",
+      "description": "Descricao",
+      "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrL0q1GCq4yqgXZR63GG1LHTuKSIIbjVqVQg&s"
+    }
+  ]
+}
